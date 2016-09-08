@@ -4,8 +4,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    # return "Hello World!!"
-    return render_template('hello.html')
+    return "Hello World!!"
+    #return render_template('hello.html')
     
 @app.route('/user/<username>')
 def show_user_profile(username):
